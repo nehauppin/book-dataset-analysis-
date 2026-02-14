@@ -208,3 +208,7 @@ __marimo__/
 
 # ignore the raw data file
 Amazon-books.csv
+
+# Windows system files
+   desktop.ini
+   Thumbs.db
