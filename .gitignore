@@ -208,6 +208,7 @@ __marimo__/
 
 # ignore the raw data file
 Amazon-books.csv
+BookAwards2023.csv
 
 # Windows system files
    desktop.ini
