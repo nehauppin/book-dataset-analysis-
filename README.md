@@ -1,12 +1,23 @@
 # book-dataset-analysis-
-Amazon Bestselling Books of 2023 - Exploratory Data Analysis
+Part 2: Data Integration
 
-This project explores a dataset of Amazon bestselling books to analyze the patterns in pricing, ratings and review counts, and genres. Through summaries and visualizations, I examined the different characteristics of bestsellers on Amazon in 2023. Key highlights include:
+## Project Overview
+This project extends the original Amazon bestselling books analysis by integrating additional data from a Goodreads dataset to perform a comparative analysis.
 
-- Initial Exploration: includes data structure overview, data quality overview, and mild data cleaning
-- Topic Specific Analysis: price, rating and genre analysis 
+### Datasets Used
+1. Amazon Top Selling Books 2023
+   - Source: Kaggle
+   - Contains: approx. 4000 bestselling books with ratings, reviews and pricing data from 2023
+2. Goodreads Book Awards 2023
+   - Source: Kaggle
+   - Contains: award-winning books from 2023 with author information, titles, and ratings 
 
-Data Source \
-The data used in this analysis was sourced from Kaggle.
+### Data Cleaning
+- Standardized author names across both datasets (lowercase, whitespace normalization)
+- Created `Author_cleaned` column as the merge key
+- Preserved original author names for reference
 
-
+### Merge Strategy
+- Join Type: Left Join
+- Rationale: Preserves all Amazon bestselling books while provding awards data when matched
+- Match Rate: 7.39% of Amazon bestsellers appear in the Goodreads award data
