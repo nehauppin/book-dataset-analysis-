@@ -32,7 +32,7 @@ This project is a two-part Exploratory Data Analysis (EDA) that examines what ma
 3. **Genre** — Which genres dominate the list, and does genre affect pricing?
 
 ### Part 2 - Goodreads Awards Integration
-### Data Preparation
+#### Data Preparation
 - Standardized author names across both datasets (lowercase, whitespace normalization)
 - Created `Author_cleaned` column as the merge key
 - Preserved original author names for reference
